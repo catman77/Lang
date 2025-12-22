@@ -1,0 +1,89 @@
+{
+  "rules": [
+    {
+      "left": "00",
+      "right": "|"
+    },
+    {
+      "left": "||",
+      "right": "0"
+    }
+  ],
+  "initial_string": "0000",
+  "config": {
+    "graph": {
+      "depth": 4,
+      "max_size": 50
+    },
+    "overlap": {
+      "min_length": 1
+    },
+    "macros": {
+      "min_frequency": 2,
+      "max_length": 10
+    },
+    "verification": {
+      "z3_enabled": true,
+      "isabelle_enabled": false,
+      "timeout": 5000
+    },
+    "math_lifts": {
+      "geometry": true,
+      "measure": true,
+      "category": true,
+      "embedding_dim": 8
+    },
+    "text_generation": true
+  },
+  "rewriting": {
+    "reachable": 0,
+    "omega_limit": 0,
+    "normal_forms": []
+  },
+  "graph": {
+    "vertices": 0,
+    "edges": 0,
+    "scc_count": 0,
+    "largest_scc": 0
+  },
+  "overlaps": {
+    "pairs": 0,
+    "critical_pairs": 0
+  },
+  "macros": {
+    "count": 0,
+    "coverage": 0.0
+  },
+  "text": {
+    "generated": "",
+    "ast_size": 0
+  },
+  "verification": {
+    "z3": {}
+  },
+  "math_lifts": {
+    "geometry": {},
+    "measure": {},
+    "category": {
+      "objects": 0,
+      "morphisms": 0,
+      "rules": 2
+    }
+  },
+  "meta": {
+    "execution_time": 0.013618946075439453,
+    "errors": [
+      "L0 ошибка: RewritingEngine.bounded_reach() got an unexpected keyword argument 'max_steps'",
+      "L2 ошибка: GraphBuilder.__init__() missing 1 required positional argument: 'alphabet'",
+      "L3 ошибка: 'String' object is not iterable",
+      "L4 ошибка: 'FrequencyAnalyzer' object has no attribute 'get_frequent_substrings'",
+      "L5 ошибка: ASTNode.__init__() got an unexpected keyword argument 'type'",
+      "L6 ошибка: Z3Checker.__init__() got an unexpected keyword argument 'timeout'",
+      "L7 геометрия ошибка: 'Manifold' object has no attribute 'estimate_dimension'",
+      "L7 меры ошибка: Not a probability measure: total = 0"
+    ],
+    "warnings": [
+      "Графовый анализ пропущен"
+    ]
+  }
+}

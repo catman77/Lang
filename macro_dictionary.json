@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "macros": [
+    {
+      "symbol": "A",
+      "definition": "||",
+      "verified": true,
+      "metadata": {
+        "frequency": 5,
+        "stability": 1.0,
+        "score": 6.0
+      }
+    },
+    {
+      "symbol": "B",
+      "definition": "|||",
+      "verified": true,
+      "metadata": {
+        "frequency": 4,
+        "stability": 1.0,
+        "score": 5.2
+      }
+    }
+  ],
+  "history": [
+    {
+      "version": 2,
+      "action": "add",
+      "macro": "A := || \u2713",
+      "symbol": "A"
+    },
+    {
+      "version": 3,
+      "action": "add",
+      "macro": "B := ||| \u2713",
+      "symbol": "B"
+    }
+  ]
+}

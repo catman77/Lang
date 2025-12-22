@@ -1,0 +1,6 @@
+session SpaceLanguage = Main +
+  options [document = false]
+  theories
+    SpaceLanguageBasic
+    CustomTheorems
+    RulesFormalization

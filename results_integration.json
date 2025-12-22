@@ -1,0 +1,109 @@
+{
+  "rules": [
+    {
+      "left": "00",
+      "right": "|"
+    },
+    {
+      "left": "||",
+      "right": "0"
+    },
+    {
+      "left": "0|",
+      "right": "|0"
+    },
+    {
+      "left": "|0",
+      "right": "0|"
+    }
+  ],
+  "initial_string": "00|00||0",
+  "config": {
+    "graph": {
+      "depth": 10,
+      "max_size": 200
+    },
+    "overlap": {
+      "min_length": 1
+    },
+    "macros": {
+      "min_frequency": 2,
+      "max_length": 6
+    },
+    "verification": {
+      "z3_enabled": true,
+      "isabelle_enabled": true,
+      "timeout": 3000
+    },
+    "math_lifts": {
+      "geometry": true,
+      "measure": true,
+      "category": true,
+      "embedding_dim": 10
+    },
+    "text_generation": true
+  },
+  "rewriting": {
+    "reachable": 140,
+    "omega_limit": 1,
+    "normal_forms": [
+      "|"
+    ]
+  },
+  "graph": {
+    "vertices": 140,
+    "edges": 815,
+    "scc_count": 12,
+    "largest_scc": 56
+  },
+  "overlaps": {
+    "pairs": 5,
+    "critical_pairs": 1
+  },
+  "macros": {
+    "count": 20,
+    "coverage": 0.9928571428571429
+  },
+  "text": {
+    "generated": "Space Language System\n========================================\n\nRules:\n  - 00 → |\n  - || → 0\n  - 0| ...",
+    "ast_size": 5
+  },
+  "verification": {
+    "z3": {
+      "checker_initialized": true,
+      "rules_count": 4,
+      "timeout": 3000,
+      "reachability_check": {
+        "target": "|",
+        "reachable": true
+      },
+      "termination_hint": {
+        "has_normal_forms": true,
+        "normal_forms_count": 1
+      }
+    }
+  },
+  "math_lifts": {
+    "geometry": {
+      "dimension": 2,
+      "curvature": 0.07035335550648722,
+      "points": 20,
+      "embedding_dim": 10
+    },
+    "measure": {
+      "entropy": 7.129283016944978,
+      "support_size": 140,
+      "total_observations": 140
+    },
+    "category": {
+      "objects": 30,
+      "morphisms": 30,
+      "rules": 4
+    }
+  },
+  "meta": {
+    "execution_time": 0.09176754951477051,
+    "errors": [],
+    "warnings": []
+  }
+}
